@@ -3,16 +3,110 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Share Price Graphs</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
-    <form action="/" method="post">
-        <input autocomplete="off" autofocus placeholder="First Ticker" type="text" name="first">
-        <input autocomplete="off" autofocus placeholder="Second Ticker" type="text" name="second">
+    <form style="margin-left: 15%; margin-right: auto;" action="/" method="post">
+        <input autofocus placeholder="First Ticker" type="text" name="first">
+        <input placeholder="Second Ticker" type="text" name="second">
         <button type="submit">Enter</button>
     </form>
-</body>
+    {% block graph%}
+    {% endblock %}
+    <table  style="margin-left: 15%; margin-right: auto;" >
+        <tbody>
+            <tr>
+              <td>UnitedHealth Group Incorporated</td>
+              <td>UNH</td>
+              <td>Goldman Sachs Group Inc.</td>
+              <td>GS</td>
+            </tr>
+            <tr>
+              <td>Microsoft Corporation</td>
+              <td>MSFT</td>
+              <td>The Home Depot, Inc.</td>
+              <td>HD</td>
+            </tr>
+            <tr>
+              <td>Caterpillar Inc.</td>
+              <td>CAT</td>
+              <td>Amgen Inc.</td>
+              <td>AMGN</td>
+            </tr>
+            <tr>
+              <td>Visa Inc. Class A Shares</td>
+              <td>V</td>
+              <td>McDonald's Corporation</td>
+              <td>MCD</td>
+            </tr>
+            <tr>
+              <td>Salesforce Inc.</td>
+              <td>CRM</td>
+              <td>American Express Company</td>
+              <td>AXP</td>
+            </tr>
+            <tr>
+              <td>Apple Inc.</td>
+              <td>AAPL</td>
+              <td>Honeywell International Inc.</td>
+              <td>HON</td>
+            </tr>
+            <tr>
+              <td>Travelers Companies Inc.</td>
+              <td>TRV</td>
+              <td>JPMorgan Chase & Co.</td>
+              <td>JPM</td>
+            </tr>
+            <tr>
+              <td>Amazon.com, Inc.</td>
+              <td>AMZN</td>
+              <td>The Boeing Company</td>
+              <td>BA</td>
+            </tr>
+            <tr>
+              <td>International Business Machines Corporation</td>
+              <td>IBM</td>
+              <td>The Procter & Gamble Company</td>
+              <td>PG</td>
+            </tr>
+            <tr>
+              <td>Chevron Corporation</td>
+              <td>CVX</td>
+              <td>Dow Inc.</td>
+              <td>DOW</td>
+            </tr>
+            <tr>
+              <td>Walmart Inc.</td>
+              <td>WMT</td>
+              <td>Merck & Co., Inc.</td>
+              <td>MRK</td>
+            </tr>
+            <tr>
+              <td>Nike Inc.</td>
+              <td>NKE</td>
+              <td>United Technologies Corporation</td>
+              <td>UTX</td>
+            </tr>
+            <tr>
+              <td>Cisco Systems, Inc.</td>
+              <td>CSCO</td>
+              <td>Exxon Mobil Corporation</td>
+              <td>XOM</td>
+            </tr>
+            <tr>
+              <td>Verizon Communications Inc.</td>
+              <td>VZ</td>
+              <td>Intel Corporation</td>
+              <td>INTC</td>
+            </tr>
+            <tr>
+              <td>Coca-Cola Company</td>
+              <td>KO</td>
+              <td>Walgreens Boots Alliance Inc.</td>
+              <td>WBA</td>
+            </tr>
+          </tbody>
+        </table>
+    </body>
 </html>
